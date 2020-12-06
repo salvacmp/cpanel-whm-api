@@ -67,6 +67,8 @@ $whmClient = new WHMClient("WHM_USERNAME","API_TOKEN", "yourwhmserver.com", 2087
     - getUsers (List of all users in server)
     - getLockedAccounts (List of all locked accounts)
     - getSuspendedAccounts (List of all suspended accounts)
+    - suspend (Suspend an account)
+    - unsuspend (Unsuspend an account)
     - createUserSession()
     - changePlan()    
 
