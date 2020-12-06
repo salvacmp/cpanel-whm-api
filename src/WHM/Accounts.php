@@ -986,7 +986,7 @@ class Accounts
      * @throws ClientExceptions
      * @throws Exception
      */
-    public function suspend($user, $reason, $disallowUnsuspension = true)
+    public function suspend($user, $reason, $disallowUnsuspension = false)
     {
         $params = ['user' => $user, 'reason' => $reason, 'disallowun' => (int) $disallowUnsuspension];
         $result = $this->client->sendRequest("/json-api/suspendacct", "GET", $params);
